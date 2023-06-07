@@ -1,0 +1,42 @@
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiperItem {
+  height: 700px;
+  background-image: url("../../assets/images/carousal-actors.svg");
+  background-repeat: no-repeat;
+}
+.swiperItemSecond {
+  height: 700px;
+  background-image: url("../../assets/images/carousal-second.svg");
+  background-repeat: no-repeat;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 80%;
+}
+
+.swiper-pagination {
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  padding-top: 20px;
+}

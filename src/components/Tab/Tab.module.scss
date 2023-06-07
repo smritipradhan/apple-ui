@@ -1,0 +1,19 @@
+.tabContainer {
+  padding: 12px 0px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  .tabElement {
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    cursor: pointer;
+  }
+  .tabImage {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}
