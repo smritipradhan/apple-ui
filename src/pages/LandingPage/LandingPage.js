@@ -3,6 +3,10 @@ import Carousal from "../../components/Carousal/Carousal";
 import Footer from "../../components/Footer/Footer";
 import Tab from "../../components/Tab/Tab";
 import { CONSTANT } from "../../constants/Constant";
+import appleCard from "./../../assets/images/appleCard.svg";
+import appleGiftLogo from "./../../assets/images/appleGiftLogo.svg";
+import appleWatchLogo from "./../../assets/images/appleWatchLogo.svg";
+import appleWatchUltra from "./../../assets/images/appleWatchUltra.svg";
 import styles from "./LandingPage.module.scss";
 
 const LandingPage = () => {
@@ -36,19 +40,56 @@ const LandingPage = () => {
       </div>
       <div className={styles.iphoneIpad}>
         <div className={`${styles.iphoneAbout} ${styles.miniItemsContainer}`}>
-          wdw
+          <div className={styles.iphone14}>iPhone 14 Pro</div>
+          <div className={styles.proBeyond}>Pro. Beyond.</div>
+          <div className={styles.learnMoreBuyContainer}>
+            <div className={styles.learnMoreBuy}>Learn more</div>
+            <div className={styles.learnMoreBuy}>Buy</div>
+          </div>
         </div>
         <div className={`${styles.ipadAbout} ${styles.miniItemsContainer}`}>
-          dw
+          <div className={styles.ipadText}>ipad</div>
+          <div className={styles.description}>Lovable. Drawable. Magical.</div>
+          <div className={styles.learnMoreBuyContainer}>
+            <div className={styles.learnMoreBuy}>Learn more</div>
+            <div className={styles.learnMoreBuy}>Buy</div>
+          </div>
         </div>
         <div className={`${styles.airpods} ${styles.miniItemsContainer}`}>
-          wdw
+          <img src={appleGiftLogo} alt="appleGift"></img>
+          <div className={styles.title}>Airpods</div>
+          <div className={styles.description}>Share the joy</div>
+          <div className={styles.learnMoreBuy}>Shop</div>
         </div>
-        <div className={`${styles.iwatch} ${styles.miniItemsContainer}`}></div>
-        <div
-          className={`${styles.iwatchAdvance} ${styles.miniItemsContainer}`}
-        ></div>
-        <div className={`${styles.iboard} ${styles.miniItemsContainer}`}></div>
+        <div className={`${styles.iwatch} ${styles.miniItemsContainer}`}>
+          <img src={appleWatchLogo} alt="appleWatch"></img>
+          <div className={styles.description}>A healthy leap ahead.</div>
+          <div className={styles.learnMoreBuyContainer}>
+            <div className={styles.learnMoreBuy}>Learn more</div>
+            <div className={styles.learnMoreBuy}>Buy</div>
+          </div>
+        </div>
+        <div className={`${styles.iwatchAdvance} ${styles.miniItemsContainer}`}>
+          <img src={appleWatchUltra} alt="appleWatchUltra"></img>
+          <div className={`${styles.distance} ${styles.description}`}>
+            Adventure awaits.
+          </div>
+          <div className={styles.learnMoreBuyContainer}>
+            <div className={styles.learnMoreBuy}>Learn more</div>
+            <div className={styles.learnMoreBuy}>Buy</div>
+          </div>
+        </div>
+        <div className={`${styles.iboard} ${styles.miniItemsContainer}`}>
+          <img src={appleCard} alt="appleCard"></img>
+          <div className={styles.description}>
+            <div>Get up to 3% Daily Cash back</div>
+            <div> with every purchase.</div>
+          </div>
+          <div className={styles.learnMoreBuyContainer}>
+            <div className={styles.learnMoreBuy}>Learn more</div>
+            <div className={styles.learnMoreBuy}>Apply Now</div>
+          </div>
+        </div>
       </div>
       <div className={styles.carousalContainer}>
         <Carousal />
